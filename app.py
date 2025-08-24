@@ -1,7 +1,7 @@
 import os
 # プロキシ設定
-os.environ["HTTP_PROXY"] = "http://10.46.59.30:4221"
-os.environ["HTTPS_PROXY"] = "http://10.46.59.30:4221"
+#os.environ["HTTP_PROXY"] = "http://10.46.59.30:4221"
+#os.environ["HTTPS_PROXY"] = "http://10.46.59.30:4221"
 #os.environ["PYTHONHTTPSVERIFY"] = "0"
 import streamlit as st
 from dotenv import load_dotenv
