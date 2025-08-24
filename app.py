@@ -37,6 +37,9 @@ def get_api_key():
     log_message(f"取得したAPIキー: {api_key[:6]}******（一部非表示）")
     return api_key
 
+#専用ログ
+st.write("STのSecretsの内容: ", st.secrets)
+
 # 接続確認（Pingテスト）
 def check_connection():
     """OpenAIのAPIエンドポイントにPingを送信して接続確認"""
