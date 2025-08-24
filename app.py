@@ -40,7 +40,8 @@ selected_expert = st.radio(
 user_input = st.text_input("質問を入力してください")
 
 def get_llm_response(user_text, expert_type):
-    api_key = os.getenv("OPENAI_API_KEY")
+#    api_key = os.getenv("OPENAI_API_KEY")
+    api_key = st.secrets["OPENAI_API_KEY"]
     if not api_key:
         return "OpenAI APIキーが設定されていません。"
     
